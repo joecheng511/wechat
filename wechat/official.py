@@ -124,6 +124,20 @@ class WxApplication(object):
             'pic_photo_or_album': self.on_pic_photo_or_album,
             'pic_weixin': self.on_pic_weixin,
             'location_select': self.on_location_select,
+            'card_pass_check': self.on_card_pass_check,
+            'card_not_pass_check': self.on_card_not_pass_check,
+            'user_get_card': self.on_user_get_card,
+            'user_gifting_card': self.on_user_gifting_card,
+            'user_del_card': self.on_user_del_card,
+            'user_consume_card': self.on_user_consume_card,
+            'user_pay_from_pay_cell': self.on_user_pay_from_pay_cell,
+            'user_view_card': self.on_user_view_card,
+            'user_enter_session_from_card': self.on_user_enter_session_from_card,
+            'update_member_card': self.on_update_member_card,
+            'card_sku_remind': self.on_card_sku_remind,
+            'card_pay_order': self.on_card_pay_order,
+            'submit_membercard_user_info': self.on_submit_membercard_user_info,
+
         }
 
     def on_event(self, event):
@@ -164,6 +178,45 @@ class WxApplication(object):
         return WxEmptyResponse()
 
     def on_location_select(self, event):
+        return WxEmptyResponse()
+
+    def on_card_pass_check(self, event):
+        return WxEmptyResponse()
+
+    def on_card_not_pass_check(self, event):
+        return WxEmptyResponse()
+
+    def on_user_get_card(self, event):
+        return WxEmptyResponse()
+
+    def on_user_gifting_card(self, event):
+        return WxEmptyResponse()
+
+    def on_user_del_card(self, event):
+        return WxEmptyResponse()
+
+    def on_user_consume_card(self, event):
+        return WxEmptyResponse()
+
+    def on_user_pay_from_pay_cell(self, event):
+        return WxEmptyResponse()
+
+    def on_user_view_card(self, event):
+        return WxEmptyResponse()
+
+    def on_user_enter_session_from_card(self, event):
+        return WxEmptyResponse()
+
+    def on_update_member_card(self, event):
+        return WxEmptyResponse()
+
+    def on_card_sku_remind(self, event):
+        return WxEmptyResponse()
+
+    def on_card_pay_order(self, event):
+        return WxEmptyResponse()
+
+    def on_submit_membercard_user_info(self, event):
         return WxEmptyResponse()
 
     def handler_map(self):
