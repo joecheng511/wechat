@@ -37,7 +37,7 @@ class WxRequest(object):
         params = [ele for ele in doc.childNodes[0].childNodes
                   if isinstance(ele, minidom.Element)]
         for param in params:
-            if param.childNodes:
+            if param.childNodes and hasattr(param.childNodes[0], 'data'):
                 text = param.childNodes[0]
                 self.__dict__.update({param.tagName: text.data})
             else:
